@@ -90,6 +90,34 @@
     top: 13px !important;
   }
 }
+@media screen and (max-width: 639px) {
+  .header-container {
+    max-width: 300px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .burger {
+    left: 78.5%;
+  }
+  .bamboo {
+    left: 14px !important;
+  }
+  .main-image {
+    height: 187px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .panda-320 {
+    display: block !important;
+  }
+  .panda-640 {
+    display: none !important;
+  }
+}
+.panda-320 {
+  display: none;
+}
+
 .item-1 {
   font-weight: 400;
   font-size: 19.0145px;
@@ -457,6 +485,131 @@
   }
   .mo-radio {
     margin-top: 31px !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  .donate-background {
+    height: 1145px !important;
+  }
+  .container {
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 1145px !important;
+  }
+  .text-1, .text-2 {
+    width: 300px !important;
+  }
+  .text-1 {
+    height: 87px !important;
+    margin-bottom: 20px !important;
+  }
+  .text-2 {
+    height: 308px !important;
+  }
+  .text-3 {
+    font-size: 24px !important;
+    width: 227px !important;
+    height: 29px !important;
+  }
+  .outer-feed-friend {
+    width: 300px !important;
+    height: 591px !important;
+  }
+  .feed-friend {
+    width: 300px !important;
+    height: 591px !important;
+  }
+  .sent-1 {
+    margin-top: 20px !important;
+    width: 232px !important;
+    height: 29px !important;
+    font-size: 24px !important;
+  }
+  .sent-2 {
+    width: 300px !important;
+    height: 44px !important;
+    font-size: 16px !important;
+    margin-bottom: 155px !important;
+  }
+  .number-4 {
+    top: 140px !important;
+    left: 30px !important;
+    font-size: 40.6015px !important;
+  }
+  .diet {
+    top: 210px !important;
+    left: 0 !important;
+    width: 89.66px;
+    height: 12.41px;
+    font-size: 9.02255px !important;
+  }
+  .x {
+    top: 195px !important;
+    left: 100px !important;
+    height: 7.8947296143px;
+    width: 7.8947296143px;
+  }
+  .panda-icon {
+    top: 115px !important;
+    left: 140px !important;
+    width: 160.15px !important;
+    height: 138.72px !important;
+  }
+  .money-progress {
+    height: 13.5px !important;
+    width: 300px !important;
+  }
+  .line {
+    width: 265px !important;
+    top: -40px;
+    left: 20px !important;
+    height: 1px !important;
+  }
+  .radio-btn {
+    padding: 20px 0 0 0 !important;
+    width: 5px !important;
+    height: 5px !important;
+  }
+  .radio-btn::before {
+    width: 5px !important;
+    height: 5px !important;
+  }
+  .radio-btn:checked::after {
+    width: 5px !important;
+    height: 5px !important;
+  }
+  .progressbar {
+    width: 280px;
+    margin-left: 15px;
+  }
+  .sum {
+    font-size: 13px !important;
+    margin-top: -25px !important;
+    margin-left: -10px !important;
+  }
+  .five-hundred {
+    padding-left: 0 !important;
+  }
+  .dollar-sign {
+    height: 10px !important;
+    width: 5px !important;
+  }
+  input[type=number] {
+    margin-top: 45px !important;
+  }
+  .dollar-number {
+    top: 60px !important;
+    left: 225px;
+  }
+  .share-text {
+    width: 301px;
+  }
+  .btn-2 {
+    margin-top: 28px !important;
+  }
+  .mo-radio {
+    margin-top: 25px !important;
   }
 }
 .text-1-br {
@@ -877,6 +1030,94 @@ input[type=radio][name=frequency]:checked::after {
   .yt-icon {
     top: 115px !important;
     left: 4px !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  .footer {
+    height: 334px;
+  }
+  .footer-container {
+    max-width: 320px;
+    height: 334px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logo {
+    border: none !important;
+    height: 23px !important;
+    width: 150px !important;
+    padding: 0 !important;
+    margin-left: 85px;
+    margin-top: 20px !important;
+  }
+  .bamboo-footer {
+    top: 16px;
+    left: 168px !important;
+  }
+  .block-net {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 194px;
+    height: 30px;
+    top: -155px;
+    left: 63px !important;
+  }
+  .donate {
+    margin-left: 10px;
+    margin-top: 86px !important;
+  }
+  .circle {
+    width: 26px;
+    height: 26px;
+  }
+  .circle-1 {
+    width: 26px;
+    height: 26px;
+  }
+  .fb-icon {
+    top: 5px !important;
+    left: 9px !important;
+  }
+  .tw-icon {
+    top: 6px !important;
+    left: 62px !important;
+  }
+  .ig-icon {
+    top: 5px !important;
+    left: 117px !important;
+  }
+  .yt-icon {
+    top: 7px !important;
+    left: 172px !important;
+  }
+  .alisa {
+    font-size: 15px !important;
+    width: 206px !important;
+  }
+  .rss {
+    font-size: 15px !important;
+    width: 214px !important;
+  }
+  .designer {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 215px !important;
+    margin-left: 0 !important;
+  }
+  .copyright {
+    margin-bottom: 0 !important;
+    height: 100px;
+    width: 20px !important;
+  }
+  .footer-navigation {
+    position: absolute;
+    width: 278px !important;
+    height: 15px;
+    margin-left: 0 !important;
+    top: 300px;
+    left: 20px;
   }
 }
 .social-net {
