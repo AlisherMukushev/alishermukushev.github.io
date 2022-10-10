@@ -49,42 +49,42 @@
                 <div class="money-progress">
                     <ul class="progressbar">
                         <div class="five-thousand-dollars">
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="5000" id="5000">
                             <li class="sum five-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">5000</li>
                         </div>
                         <div class="two-thousand-dollars">
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="2000" id="2000">
                             <li class="sum two-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">2000</li>
                         </div>
                         <div class="one-thousand-dollars">
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="1000" id="1000">
                             <li class="sum one-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">1000</li>
                         </div>
                         <div class="five-hundred">
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="500" id="500">
                             <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">500</li>
                         </div>
                         <div>
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="250" id="250">
                             <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">250</li>
                         </div>
                         <div>
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="100" id="100" checked>
                             <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">100</li>
                         </div>
                         <div>
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="50" id="50">
                             <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">50</li>
                         </div>
                         <div class="twenty-five">
-                            <input class="radio-btn" type="radio" name="amounts">
+                            <input class="radio-btn" type="radio" name="amounts" value="25" id="25">
                             <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">25</li>
                         </div>
                     </ul>
                     <img class="line" src="../../assets/icons/Rectangle 12.svg" alt="line">
                 </div>
                 <div class="custom-amount">
-                    <input type="number" max="9999" placeholder="Another amount">
+                    <input type="number" id="donation" maxlength="4" placeholder="Another amount" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     <img class="dollar-number" src="../../assets/icons/dollar.svg" alt="dollar">
                 </div>
                 <div class="mo-radio">
@@ -153,5 +153,6 @@
         </div>
     </div>
     </footer>
+    <script src="../../pages/donate/script.js"></script>
 </body>
 </html>

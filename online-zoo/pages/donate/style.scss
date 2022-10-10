@@ -380,7 +380,7 @@
         padding-right: 0 !important;
     }
     .two-thousand-dollars {
-        padding-left: 12px !important;
+        margin-left: -10px !important;
     }
     .number-4 {
         left: 262px !important;
@@ -664,7 +664,6 @@
     font-size: 36px;
     line-height: 130%;
     color: #FE9013;
-    margin-left: 220px;
     margin-top: 0px;
     margin-bottom: 60px;
 }
@@ -789,7 +788,14 @@
 
 .radio-btn:checked ~ li {
     color: #FE9013;
+    background-image: url(../../assets/images/orange-dollar.png);
+    background-repeat: no-repeat;
+    background-position-y: 7px;
   }
+
+.radio-btn:checked ~ li > img {
+    opacity: 0;
+}
 
 input[type=radio][name=amounts]::before {
     content: "";

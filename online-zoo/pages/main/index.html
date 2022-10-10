@@ -14,20 +14,39 @@
 <body>
     <main>
     
-    <header class="header">
+    <header class="header" id="header-id">
         <div class="header-container">
         <h1 class="item-1" onclick="document.location='../../pages/main/index.html'">
             PetStory online
         </h1>
         <img class="bamboo" src="../../assets/icons/bamboo.svg" alt="bamboo">
-        <div  class="burger"><span></span></div>
+        <div class="burger" onclick="openBurgerMenu(), headerWhite(), orangeLogoShow()"><span></span></div>
         <div><a class="item-2" href="../../pages/main/index.html">About</a></div>
         <div class="item-3">Map</div>
         <div class="item-4">Zoos</div>
         <div><a class="item-5" href="../../pages/donate/index.html">Donate</a></div>
         <div class="item-6">Contact us</div>
         <div class="div-item-7"><a class="item-7" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></div>
-    </div>
+        </div>
+        <div class="menu-burger" id="men-burg">
+            <ul>
+                <li>
+                    <a href="../../pages/main/index.html">About</a>
+                </li>
+                <li>Map</li> 
+                <li>Zoos</li>
+                <li> 
+                    <a href="../../pages/donate/index.html">Donate</a>
+                </li>
+                <li>Contact us
+                </li>
+                <li>
+                    <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
+                </li>
+            </ul>
+            <div><img class="close-btn" src="../../assets/icons/x_icon.svg" onclick="closeBurgerMenu()"></div>
+            <img class="orange-logo" src="../../assets/images/Frame 17.png" alt="">
+        </div>
     </header>
     
     <div class="image-container">
@@ -62,7 +81,7 @@
 
     <div class="section-3-container">
             <div class="container">
-            <div class="section-3">
+            <div class="section-3" id="pet-cards">
                 <div class="pet">
                     <img class="pet-picture" src="../../assets/images/panda.png" alt="panda">
                     <p class="pet-name">Giant Pandas</p>
@@ -105,8 +124,8 @@
                     <p class="place">Native to Antarctica</p>
                     <img class="mf-icon" src="../../assets/icons/meet-fish_icon.svg" alt="meet-fish">
                 </div>
-                <button class="arrow-left"><img src="../../assets/icons/Vector.svg" alt="arrow-left"></button>
-                <button class="arrow-right"><img src="../../assets/icons/Vector.svg" alt="arrow-right"></button>
+                <button class="arrow-left" onclick = "plusSlides(-1), shuffle()"><img src="../../assets/icons/Vector.svg" alt="arrow-left"></button>
+                <button class="arrow-right" onclick = "plusSlides(1), shuffle()"><img src="../../assets/icons/Vector.svg" alt="arrow-right"></button>
                 <img class="palm" src="../../assets/images/palm_foto.png" alt="palm">
                 <img class="palm-640" src="../../assets/images/palm_foto.x640.png" alt="palm">
                 <img class="palm-320" src="../../assets/images/palm_foto.x320.png" alt="palm">
@@ -162,6 +181,9 @@
             <div class="section-5">
                 <p class="testi-header">Testimonials</p>
                 <div class="testimonials">
+
+                    <div class="slider-inner">
+
                 <div class="frames">
                     <img class="users" src="../../assets/icons/user_icon.svg" alt="user">
                     <p class="user-name">Michael John</p>
@@ -200,8 +222,84 @@
                     <p class="testi-text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
                         The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf </p>
                 </div>
+
+                <div class="frames">
+                    <img class="users" src="../../assets/images/Frederica.png" alt="user">
+                    <p class="user-name">Fredericka Michelin</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to </p>
+                </div>
+
+                <div class="frames">
+                    <img class="users" src="../../assets/images/Oskar.png" alt="user">
+                    <p class="user-name">Oskar Samborsky</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for</p>
+                </div>
+            
+                <div class="frames user-mila">
+                    <img class="users" src="../../assets/images/Mila.png" alt="user">
+                    <p class="user-name">Mila Riksha</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf </p>
+                </div>
+
+                <div class="frames">
+                    <img class="users" src="../../assets/icons/user_icon.svg" alt="user">
+                    <p class="user-name">Michael John</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Today</p>
+                    <p class="testi-text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for <br>animals. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for
+                    </p>
+                </div>
+
+                <div class="frames user-mila">
+                    <img class="users" src="../../assets/images/Mila.png" alt="user">
+                    <p class="user-name">Mila Riksha</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf </p>
+                </div>
+
+                <div class="frames">
+                    <img class="users" src="../../assets/images/Oskar.png" alt="user">
+                    <p class="user-name">Oskar Samborsky</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for</p>
+                </div>
+
+                <div class="frames">
+                    <img class="users" src="../../assets/images/Frederica.png" alt="user">
+                    <p class="user-name">Fredericka Michelin</p>
+                    <p class="location">Local Austria</p>
+                    <p class="dot">•</p>
+                    <p class="date">Yesterday</p>
+                    <p class="testi-text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.<br>
+                        The best online zoo I’ve met. My son delighted very much ljves to </p>
+                </div>
+
             </div>
-            <div><progress value="19.2" max="100"></progress></div>
+                
+            </div>
+            <input type="range" min="0" max="7" step="1" value="0">
             <button class="feedback">Leave feedback</button>
             </div>
             </div>
@@ -261,5 +359,6 @@
         </div>
     </footer>
     </main>
+    <script src="../../pages/main/script.js"></script>
 </body>
 </html>
