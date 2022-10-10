@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+        <h1 class="item-1" onclick="document.location='../../pages/main/index.html'">
+            PetStory online
+        </h1>
+        <img class="bamboo" src="../../assets/icons/bamboo.svg" alt="bamboo">
+        <div  class="burger"><span></span></div>
+        <div><a class="item-2" href="../../pages/main/index.html">About</a></div>
+        <div class="item-3">Map</div>
+        <div class="item-4">Zoos</div>
+        <div><a class="item-5" href="../../pages/donate/index.html">Donate</a></div>
+        <div class="item-6">Contact us</div>
+        <div class="div-item-7"><a class="item-7" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></div>
+        </div>
+    </header>
+    <div class="main-image">
+        <img class="panda-1000" src="../../assets/images/panda_bg.x1000.png" alt="panda">
+        <img class="panda-640" src="../../assets/images/panda_bg.x640.png" alt="panda">
+        <img class="panda-320" src="../../assets/images/panda_bg.x320.png" alt="panda">
+    </div>
+    <main class="donate-background">
+        <div class="container">
+        <p class="text-1">THE ZOO HAS OFFICIALLY REOPENED BUT WE<br class="text-1-br"> STILL NEED YOUR HELP!</p>
+        <p class="text-2">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and<br class="text-2-br"> private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome<br class="text-2-br"> these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more<br class="text-2-br"> support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+        <p class="text-3">Donation Information</p>
+        <div class="outer-feed-friend">
+            <div class="feed-friend">
+                <p class="sent-1">Pick and feed a friend</p>
+                <p class="sent-2">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                <p class="number-4">4</p>
+                <p class="diet">Panda diet for the day.</p>
+                <img class="x" src="../../assets/icons/x_icon.svg" alt="x">
+                <img class="panda-icon" src="../../assets/icons/animals-widget.svg" alt="panda">
+                <p class="amount">Amount</p>
+                <div class="money-progress">
+                    <ul class="progressbar">
+                        <div class="five-thousand-dollars">
+                            <input class="radio-btn" type="radio" name="amounts" value="5000" id="5000">
+                            <li class="sum five-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">5000</li>
+                        </div>
+                        <div class="two-thousand-dollars">
+                            <input class="radio-btn" type="radio" name="amounts" value="2000" id="2000">
+                            <li class="sum two-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">2000</li>
+                        </div>
+                        <div class="one-thousand-dollars">
+                            <input class="radio-btn" type="radio" name="amounts" value="1000" id="1000">
+                            <li class="sum one-thousand-dollars"><img src="../../assets/icons/dollar.svg" alt="dollar">1000</li>
+                        </div>
+                        <div class="five-hundred">
+                            <input class="radio-btn" type="radio" name="amounts" value="500" id="500">
+                            <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">500</li>
+                        </div>
+                        <div>
+                            <input class="radio-btn" type="radio" name="amounts" value="250" id="250">
+                            <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">250</li>
+                        </div>
+                        <div>
+                            <input class="radio-btn" type="radio" name="amounts" value="100" id="100" checked>
+                            <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">100</li>
+                        </div>
+                        <div>
+                            <input class="radio-btn" type="radio" name="amounts" value="50" id="50">
+                            <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">50</li>
+                        </div>
+                        <div class="twenty-five">
+                            <input class="radio-btn" type="radio" name="amounts" value="25" id="25">
+                            <li class="sum"><img class="dollar-sign" src="../../assets/icons/dollar.svg" alt="dollar">25</li>
+                        </div>
+                    </ul>
+                    <img class="line" src="../../assets/icons/Rectangle 12.svg" alt="line">
+                </div>
+                <div class="custom-amount">
+                    <input type="number" id="donation" maxlength="4" placeholder="Another amount" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    <img class="dollar-number" src="../../assets/icons/dollar.svg" alt="dollar">
+                </div>
+                <div class="mo-radio">
+                    <div class="label-monthly">
+                        <input class="frequency" type="radio" name="frequency" id="monthly">
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    <div class="label-once">
+                        <input class="frequency" type="radio" name="frequency" id="once" checked>
+                        <label for="once">Once</label>
+                    </div>
+                </div>
+                <div class="btn-2-container">
+                    <button class="btn-2">Feed a friend now</button>
+                    <p class="share-text">Share with your friends on social networks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="social-net">
+            <div onclick="document.location='../../pages/main/index.html'"><p class="logo">PetStory online</p>
+            <img class="bamboo-footer" src="../../assets/icons/bamboo.svg" alt="bamboo">
+            </div>
+            <button class="donate" onclick="document.location='../../pages/donate/index.html'">Donate for volunteers</button>
+                <div class="block-net">
+                <div class="icon-net" onclick="document.location='https://facebook.com'">
+                    <img class="circle" src="../../assets/icons/Ellipse 18.svg" alt="circle">
+                    <img class="fb-icon" src="../../assets/icons/Fill 211.svg" alt="fb"></img>
+                    <p class="network">Facebook</p>
+                </div></a>
+                <div class="icon-net" onclick="document.location='https://twitter.com'">
+                    <img class="circle-1" src="../../assets/icons/Ellipse 18.svg" alt="circle">
+                    <img class="tw-icon" src="../../assets/icons/Fill 172.svg" alt="twitter"></img>
+                    <p class="network">Twitter</p>
+                </div>
+                <div class="icon-net" onclick="document.location='https://instagram.com'">
+                    <img class="circle-1" src="../../assets/icons/Ellipse 18.svg" alt="circle">
+                    <img class="ig-icon" src="../../assets/icons/Fill 166.svg" alt="ig"></img>
+                    <p class="network">Instagram</p>
+                </div>
+                <div class="icon-net" onclick="document.location='https://youtube.com'">
+                    <img class="circle-1" src="../../assets/icons/Ellipse 18.svg" alt="circle">
+                    <img class="yt-icon" src="../../assets/icons/Fill 213.svg" alt="yt"></img>
+                    <p class="network">YouTube</p>
+                </div>
+                </div>
+        </div>
+        <div class="footer-navigation">
+            <div><a class="foot-about"  href="../../pages/main/index.html">About</a></div>
+            <div><a class="foot-map">Map</a></div>
+            <div><a class="foot-zoos">Zoos</a></div>
+            <div><a class="foot-contact">Contact us</a></div>
+        </div>
+        <div class="copyright">
+            <p class="subscribe">Subscribe to our news</p>
+            <input class="email" type="email" placeholder="Enter your email">
+            <button class="submit" type="submit">Submit</button>
+            <div class="designer">
+                <p class="alisa">Designed by Alisa Samborskaya</p>
+                <p class="rss">©RSSchool & ©Yem Digital 2021</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="../../pages/donate/script.js"></script>
+</body>
+</html>
