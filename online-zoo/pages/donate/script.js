@@ -1,3 +1,22 @@
+function openBurgerMenu() {
+    document.getElementById("men-burg").style.transform = "translate(0px, 0px)"
+}
+
+function closeBurgerMenu() {
+    document.getElementById("men-burg").style.transform = "translate(-100%, 0px)"
+    document.getElementById("header-id").style.background = "#111115"
+}
+
+function headerWhite() {
+    document.getElementById("header-id").style.background = "#FFFFFF"
+}
+
+function orangeLogoShow() {
+    document.getElementById("orange-logo").style.transform = "translate(0px, 0px)"
+}
+
+/////////////
+
 const fiveK = document.getElementById('5000')
 
 const twoK = document.getElementById('2000')

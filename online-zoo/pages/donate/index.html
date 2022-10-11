@@ -12,19 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header-id">
         <div class="header-container">
         <h1 class="item-1" onclick="document.location='../../pages/main/index.html'">
             PetStory online
         </h1>
         <img class="bamboo" src="../../assets/icons/bamboo.svg" alt="bamboo">
-        <div  class="burger"><span></span></div>
+        <div class="burger" onclick="openBurgerMenu(), headerWhite(), orangeLogoShow()"><span></span></div>
         <div><a class="item-2" href="../../pages/main/index.html">About</a></div>
         <div class="item-3">Map</div>
         <div class="item-4">Zoos</div>
         <div><a class="item-5" href="../../pages/donate/index.html">Donate</a></div>
         <div class="item-6">Contact us</div>
         <div class="div-item-7"><a class="item-7" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></div>
+        </div>
+        <div class="menu-burger" id="men-burg">
+            <ul>
+                <li>
+                    <a href="../../pages/main/index.html">About</a>
+                </li>
+                <li>Map</li> 
+                <li>Zoos</li>
+                <li> 
+                    <a href="../../pages/donate/index.html">Donate</a>
+                </li>
+                <li>Contact us
+                </li>
+                <li>
+                    <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
+                </li>
+            </ul>
+            <div><img class="close-btn" src="../../assets/icons/x_icon.svg" onclick="closeBurgerMenu()"></div>
+            <img class="orange-logo" src="../../assets/images/Frame 17.png" alt="">
         </div>
     </header>
     <div class="main-image">
